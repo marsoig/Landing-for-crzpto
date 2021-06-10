@@ -25,6 +25,9 @@ body {
   margin-left: auto;
   padding-top: 8vh;
 }
+
+/* _________________________________HEADER____________________________________ */
+
 header {
   display: flex;
   flex-flow: row nowrap;
@@ -39,9 +42,10 @@ header {
 }
 nav a {
   font-family: 'Montserrat', sans-serif;
-  size: 12px;
+  font-size: 12px;
   line-height: 20px;
   color: #B5B5B5;
+  letter-spacing: 2px;
 }
 nav li{
   margin-left:10px;
@@ -51,11 +55,66 @@ header button {
   width: 112px;
   height: 36px;
   margin-left: 20px;
+}
+button {
   border-radius: 3px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+#sign-in-button {
+  background-color: transparent;
+  border: solid 1px #F2994A;
+  color: #F2994A;
+}
+#sign-up-button {
+  background-color: #F2994A;
+  color: white;
 }
 header ul{
   display:flex;
 }
 .logo {
   margin-right: 30px;
+}
+
+/* _________________________FIRST___SECTION______________________________*/
+#first-section {
+  height: 77vh;
+}
+#running-man {
+  position: absolute;
+  margin-top: 24vh;
+  margin-right: 0;
+  z-index: -1;
+}
+.first-section-info {
+  padding-top: 15vh;
+  width: 49%;
+  max-width: 530px;
+}
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 50px;
+  color: #99EFD0;
+}
+p {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #8476AA;
+  font-weight: 600;
+}
+#first-section button {
+  margin-top: 40px;
+  margin-right: 20px;
+  width: 157px;
+  height: 46px;
+}
+.sponsors {
+  height: 25vh;
 }
