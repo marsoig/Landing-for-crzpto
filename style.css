@@ -26,7 +26,7 @@ body {
   padding-top: 8vh;
 }
 
-/* _________________________________HEADER____________________________________ */
+/* _________________________________HEADER__________________________________ */
 
 header {
   display: flex;
@@ -82,12 +82,14 @@ header ul{
 /* _________________________FIRST___SECTION______________________________*/
 #first-section {
   height: 77vh;
+
 }
 #running-man {
   position: absolute;
-  margin-top: 24vh;
-  margin-right: 0;
+  top: 24vh;
+  right: 0;
   z-index: -1;
+  max-width: 50vw;
 }
 .first-section-info {
   padding-top: 15vh;
@@ -115,6 +117,88 @@ p {
   width: 157px;
   height: 46px;
 }
+#demo-button {
+  background-color: transparent;
+  border: solid 1px #F2994A;
+  color: #F2994A;
+}
+#learn-more-button {
+  background-color: #F2994A;
+  color: white;
+}
+.video-preview {
+  margin-top: 5vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.video-preview p {
+    margin-top: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #8476AA;
+    font-weight: 400;
+}
+.video-preview a {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #6D6D78;
+  font-weight: 400;
+}
+iframe {
+  background-image: url("images/video-preview.png");
+}
+.video-preview-description {
+  margin-left: 20px;
+}
 .sponsors {
   height: 25vh;
+}
+.sponsors ul {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/*_________________SECOND_SECTION______________________*/
+.centered {
+  text-align: center;
+}
+
+#second-section ul p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8476AA;
+  font-weight: 600;
+}
+
+#second-section ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #99EFD0;
+  font-weight: 700;
+}
+
+#second-section li {
+  max-width: 32%;
+  margin-top: 5vh;
+}
+.feature-item {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.icon-column {
+  padding-right: 20px;
 }
