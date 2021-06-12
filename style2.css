@@ -27,53 +27,20 @@ body {
   margin-left: auto;
   padding-top: 8vh;
 }
-/*________________________________FONTS_____________________________________*/
-p {
-  margin-top: 20px;
+/*__________________________COMMON_STYLES_____________________________________*/
+
+.text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  line-height: 22px;
   color: #8476AA;
   font-weight: 600;
 }
 
-#section-2 ul p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  color: #8476AA;
-  font-weight: 600;
+.title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #99EFD0;
 }
-/* _________________________________HEADER__________________________________ */
 
-header {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
-.menu {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow:1;
-}
-nav a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  line-height: 20px;
-  color: #B5B5B5;
-  letter-spacing: 2px;
-}
-nav li{
-  margin-left:10px;
-  margin-right: 10px;
-}
-header button {
-  width: 112px;
-  height: 36px;
-  margin-left: 20px;
-}
 button {
   border-radius: 3px;
   font-family: 'Rubik', sans-serif;
@@ -81,98 +48,117 @@ button {
   letter-spacing: 2px;
 }
 
-#sign-in-button {
+.button_orange {
+  background-color: #F2994A;
+  color: white;
+}
+
+.button_transparent {
   background-color: transparent;
   border: solid 1px #F2994A;
   color: #F2994A;
 }
-#sign-up-button {
-  background-color: #F2994A;
-  color: white;
+
+/* _________________________________HEADER__________________________________ */
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
-header ul{
+.header__logo {
+  margin-right: 30px;
+}
+.header__panel {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow:1;
+}
+.header-menu__link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #B5B5B5;
+  letter-spacing: 2px;
+}
+.header-menu__item {
+  margin-left:10px;
+  margin-right: 10px;
+}
+.header-button {
+  width: 112px;
+  height: 36px;
+  margin-left: 20px;
+}
+
+.header-menu__list {
   display:flex;
 }
-.logo {
+.header__logo {
   margin-right: 30px;
 }
 
 /* _________________________FIRST___SECTION______________________________*/
 
-#running-man {
+.section-1__img {
   position: absolute;
   top: 24vh;
   right: 0;
   z-index: -1;
   max-width: 50vw;
 }
-.first-section-info {
+.section-1__info {
   padding-top: 15vh;
   width: 49%;
   max-width: 530px;
 }
-h1 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
+.section-1__title {
   font-size: 44px;
   line-height: 50px;
-  color: #99EFD0;
 }
-p {
+.section-1__text {
   margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 22px;
-  color: #8476AA;
-  font-weight: 600;
 }
-#section-1 button {
+.section-1__button {
   margin-top: 40px;
   margin-right: 20px;
   width: 157px;
   height: 46px;
 }
-#demo-button {
-  background-color: transparent;
-  border: solid 1px #F2994A;
-  color: #F2994A;
-}
-#learn-more-button {
-  background-color: #F2994A;
-  color: white;
-}
-.video-preview {
+.section-1__video-preview {
   margin-top: 5vh;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
-.video-preview p {
-    margin-top: 0;
+.video-preview__description{
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    color: #8476AA;
     font-weight: 400;
+    line-height: 22px;
+    margin-left: 20px;
 }
-.video-preview a {
-  font-family: 'Rubik', sans-serif;
+.video-preview__text {
+    margin-top: 0;
+    font-size: 16px;
+    color: #8476AA;
+}
+.video-preview__link {
   font-size: 14px;
-  line-height: 22px;
   color: #6D6D78;
-  font-weight: 400;
 }
 iframe {
   background-image: url("images/video-preview.png");
 }
-.video-preview-description {
-  margin-left: 20px;
-}
+
 .sponsors {
   height: 25vh;
 }
-.sponsors ul {
+.sponsors__list {
   height: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -180,52 +166,54 @@ iframe {
   align-items: center;
 }
 /*_________________SECOND_SECTION______________________*/
-.centered {
+
+.section-2__title {
+  font-size: 44px;
+  line-height: 50px;
   text-align: center;
 }
-
-#section-2 ul p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+.section-2__text {
+  font-size: 18px;
   line-height: 22px;
-  color: #8476AA;
-  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
 }
-
-#section-2 ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-h2 {
+.feature-item__title{
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 22px;
   color: #99EFD0;
   font-weight: 700;
 }
+.feature-item__text {
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+.feature-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
 
-#section-2 li {
+.feature-list__feature-item {
   max-width: 32%;
   margin-top: 5vh;
-}
-.feature-item {
   display: flex;
   flex-flow: row nowrap;
 }
-.icon-column {
+.feature-item__icon-column {
   padding-right: 20px;
 }
 /*________________THIRD_SECTION_________________________*/
-#section-3 {
+.section-3 {
   height: 78vh;
   display: flex;
   flex-flow: row nowrap;
   align-items:center;
   justify-content: space-around;
 }
-.section-3-info {
+.section-3__info {
   width: 49%;
   max-width: 530px;
 }
