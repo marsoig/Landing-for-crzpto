@@ -217,6 +217,21 @@ iframe {
   width: 49%;
   max-width: 530px;
 }
+.section-3__title {
+  font-size: 42px;
+  line-height: 50px;
+}
+.section-3__text {
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.section-3__button {
+  width: 155px;
+  height: 48px;
+}
 .orange {
   color: #F2994A;
 }
