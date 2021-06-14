@@ -13,15 +13,17 @@ font-family: 'Rubik', sans-serif;
 
 html {
   width: 100%;
-  height: 604%;
   overflow: visible;
 }
 body {
   width:100%;
-  height:100%;
-  background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+}
+.wrapper {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(220.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+  z-index: -1;
 }
 .main-container {
   width: 76%;
@@ -178,6 +180,7 @@ iframe {
 
 .sponsors {
   height: 25vh;
+  position: relative;
 }
 .sponsors__list {
   height: 100%;
@@ -185,6 +188,18 @@ iframe {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+}
+.sponsors__back-image_left {
+  position: absolute;
+  left: -16vw;
+  top: -1vh;
+  opacity: 0.1;
+}
+.sponsors__back-image_right {
+  position: absolute;
+  right: -16vw;
+  top: -1vh;
+  opacity: 0.1;
 }
 /*_________________SECOND_SECTION______________________*/
 
@@ -255,6 +270,7 @@ iframe {
 }
 /*________________FOURTH_SECTION_________________________*/
 .section-4 {
+  position: relative;
   text-align: center;
 }
 .section-4__title {
@@ -285,6 +301,11 @@ iframe {
   padding-left: 15px;
   padding-right: 15px;
 }
+.section-4__back-img {
+  position: absolute;
+  left: -16vw;
+  top: -43vh;
+}
 /*________________FIFTH_SECTION_________________________*/
 .section-5 {
   text-align: center;
@@ -306,6 +327,7 @@ iframe {
 }
 /*________________SIXTH_SECTION_________________________*/
 .section-6 {
+  position:relative;
   height: 57vh;
   display: flex;
   flex-flow: row nowrap;
@@ -331,8 +353,16 @@ iframe {
   width: 155px;
   height: 54px;
 }
+.section-6__back-img {
+  position: absolute;
+  right: -10vw;
+  top: 0vh;
+  z-index:-1;
+}
 /*________________SEVENTH_SECTION________________*/
 .section-7 {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
   display: flex;
   flex-flow: row nowrap;
   align-items:center;
@@ -376,9 +406,12 @@ iframe {
   max-width: 12.5vw;
 }
 /*________________EIGHTH_SECTION_________________*/
+.section-8 {
+  position:relative;
+}
 .follow-block {
   width: 65vw;
-  background-color: rgba(60, 62, 125, 0.19);
+  background-color: rgba(25,25,80);
   border-radius: 5px;
   margin-top: 12vh;
   margin-bottom: 5vh;
@@ -431,11 +464,17 @@ iframe {
 .follow_button {
   width: 128px;
 }
+.section-8__back-img {
+  position: absolute;
+  top: 0;
+  z-index:-1;
+}
 /*_________________FOOTER________________________*/
 .footer {
   margin-right: 40px;
   margin-left: 40px;
   margin-top: 13vh;
+  position: relative;
 }
 .social {
   display:flex;
@@ -497,4 +536,10 @@ iframe {
   color: #8D8D8D;
   padding-right: 16px;
   padding-left: 16px;
+}
+.footer__back-img {
+  position: absolute;
+  left: -14vw;
+  bottom:0;
+  z-index:-1;
 }
